@@ -1,0 +1,253 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary
+    x:Class="XF_HarmonicInterfaces.Views.AllExercises.Styles"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <!--#region Headline1-->
+    <!--<Style
+        x:Key="TxtHeadLine1"
+        TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource colSec}" />
+        <Setter Property="FontSize" Value="{StaticResource TxtSizeH1_96}" />
+        <Setter Property="FontFamily" Value="{StaticResource RegularFont_OpenSans}" />
+    </Style>-->
+    <!--#endregion-->
+
+
+    <!--#region Headline2-->
+
+    <!--#endregion-->
+
+
+    <!--#region Headline3-->
+
+    <!--#endregion-->
+
+
+    <!--#region Headline4-->
+    <Style
+        x:Key="TxtHeadLine4_1"
+        TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource colSec}" />
+        <Setter Property="FontSize">
+            <OnIdiom
+                x:TypeArguments="x:Double"
+                Watch="{StaticResource TxtSizeCap_12}"
+                Phone="{StaticResource TxtSizeH4_34}"
+                Desktop="{StaticResource TxtSizeH3_48}"
+                Tablet="{StaticResource TxtSizeH3_48}"
+                TV="{StaticResource TxtSizeH3_48}" />
+        </Setter>
+        <Setter Property="FontFamily" Value="OpenSans_ExtraBold" />
+    </Style>
+    <!--#endregion-->
+
+
+    <!--#region Headline5-->
+
+    <!--#endregion-->
+
+
+    <!--#region Headline6-->
+    <Style
+        x:Key="TxtHeadLine6_iOS"
+        TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource colPrim}" />
+        <Setter Property="FontSize">
+            <OnIdiom
+                x:TypeArguments="x:Double"
+                Watch="{StaticResource TxtSizeCap_12}"
+                Phone="{StaticResource TxtSizeH6_20}"
+                Desktop="{StaticResource TxtSizeH5_24}"
+                Tablet="{StaticResource TxtSizeH5_24}"
+                TV="{StaticResource TxtSizeH5_24}" />
+        </Setter>
+        <Setter Property="FontFamily" Value="SourceSansPro_Bold" />
+    </Style>
+    <!--#endregion-->
+
+
+    <!--#region Title-->
+    <Style
+        x:Key="TxtTitle_Android"
+        TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource colPrim}" />
+        <Setter Property="FontSize">
+            <OnIdiom
+                x:TypeArguments="x:Double"
+                Watch="{StaticResource TxtSizeCap_12}"
+                Phone="{StaticResource TxtSizeTit_18}"
+                Desktop="{StaticResource TxtSizeH6_20}"
+                Tablet="{StaticResource TxtSizeH6_20}"
+                TV="{StaticResource TxtSizeH6_20}" />
+        </Setter>
+        <Setter Property="FontFamily" Value="SourceSansPro_Bold" />
+    </Style>
+
+    <Style
+        x:Key="TxtTitle_1"
+        TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource colTen}" />
+        <Setter Property="FontSize">
+            <OnIdiom
+                x:TypeArguments="x:Double"
+                Watch="{StaticResource TxtSizeCap_12}"
+                Phone="{StaticResource TxtSizeTit_18}"
+                Desktop="{StaticResource TxtSizeH6_20}"
+                Tablet="{StaticResource TxtSizeH6_20}"
+                TV="{StaticResource TxtSizeH6_20}" />
+        </Setter>
+        <Setter Property="FontFamily" Value="OpenSans_Bold" />
+    </Style>
+    <!--#endregion-->
+
+
+    <!--#region Subtitle1-->
+
+    <!--#endregion-->
+
+
+    <!--#region Subtitle2-->
+    <Style
+        x:Key="TxtSubtitle2_1"
+        TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource colTer}" />
+        <Setter Property="FontSize">
+            <OnIdiom
+                x:TypeArguments="x:Double"
+                Watch="{StaticResource TxtSizeCap_12}"
+                Phone="{StaticResource TxtSizeSubTit2_14}"
+                Desktop="{StaticResource TxtSizeSubTit1_16}"
+                Tablet="{StaticResource TxtSizeSubTit1_16}"
+                TV="{StaticResource TxtSizeSubTit1_16}" />
+        </Setter>
+        <Setter Property="FontFamily" Value="OpenSans_Bold" />
+    </Style>
+
+    <Style
+        x:Key="TxtSubtitle2_2"
+        TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource colQui}" />
+        <Setter Property="FontSize">
+            <OnIdiom
+                x:TypeArguments="x:Double"
+                Watch="{StaticResource TxtSizeCap_12}"
+                Phone="{StaticResource TxtSizeSubTit2_14}"
+                Desktop="{StaticResource TxtSizeSubTit1_16}"
+                Tablet="{StaticResource TxtSizeSubTit1_16}"
+                TV="{StaticResource TxtSizeSubTit1_16}" />
+        </Setter>
+        <Setter Property="FontFamily" Value="OpenSans_SemiBold" />
+    </Style>
+    <!--#endregion-->
+
+
+    <!--#region Body1-->
+
+    <!--#endregion-->
+
+
+    <!--#region Body2-->
+
+    <!--#endregion-->
+
+
+    <!--#region Button-->
+
+    <!--#endregion-->
+
+
+    <!--#region Caption-->
+    <Style
+        x:Key="TxtCaption_1"
+        TargetType="SearchBar">
+        <Setter Property="TextColor" Value="{DynamicResource colOct}" />
+        <Setter Property="PlaceholderColor" Value="{DynamicResource colSex}" />
+        <Setter Property="BackgroundColor" Value="Transparent" />
+        <Setter Property="FontSize">
+            <OnIdiom
+                x:TypeArguments="x:Double"
+                Watch="{StaticResource TxtSizeCap_12}"
+                Phone="{StaticResource TxtSizeCap_12}"
+                Desktop="{StaticResource TxtSizeSubTit2_14}"
+                Tablet="{StaticResource TxtSizeSubTit2_14}"
+                TV="{StaticResource TxtSizeSubTit2_14}" />
+        </Setter>
+        <Setter Property="FontFamily" Value="OpenSans_Regular" />
+    </Style>
+
+    <Style
+        x:Key="TxtCaption_2"
+        TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource colOct}" />
+        <Setter Property="FontSize">
+            <OnIdiom
+                x:TypeArguments="x:Double"
+                Watch="{StaticResource TxtSizeCap_12}"
+                Phone="{StaticResource TxtSizeCap_12}"
+                Desktop="{StaticResource TxtSizeSubTit2_14}"
+                Tablet="{StaticResource TxtSizeSubTit2_14}"
+                TV="{StaticResource TxtSizeSubTit2_14}" />
+        </Setter>
+        <Setter Property="FontFamily" Value="OpenSans_Bold" />
+    </Style>
+
+    <Style
+        x:Key="TxtCaption_3"
+        TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource colQua}" />
+        <Setter Property="FontSize">
+            <OnIdiom
+                x:TypeArguments="x:Double"
+                Watch="{StaticResource TxtSizeCap_12}"
+                Phone="{StaticResource TxtSizeCap_12}"
+                Desktop="{StaticResource TxtSizeSubTit2_14}"
+                Tablet="{StaticResource TxtSizeSubTit2_14}"
+                TV="{StaticResource TxtSizeSubTit2_14}" />
+        </Setter>
+        <Setter Property="FontFamily" Value="OpenSans_SemiBold" />
+    </Style>
+
+    <Style
+        x:Key="TxtCaption_4"
+        TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource colNon}" />
+        <Setter Property="FontSize">
+            <OnIdiom
+                x:TypeArguments="x:Double"
+                Watch="{StaticResource TxtSizeCap_12}"
+                Phone="{StaticResource TxtSizeCap_12}"
+                Desktop="{StaticResource TxtSizeSubTit2_14}"
+                Tablet="{StaticResource TxtSizeSubTit2_14}"
+                TV="{StaticResource TxtSizeSubTit2_14}" />
+        </Setter>
+        <Setter Property="FontFamily" Value="OpenSans_Bold" />
+    </Style>
+
+    <Style
+        x:Key="TxtCaption_5"
+        TargetType="Label">
+        <Setter Property="TextColor" Value="{DynamicResource colQui}" />
+        <Setter Property="FontSize">
+            <OnIdiom
+                x:TypeArguments="x:Double"
+                Watch="{StaticResource TxtSizeCap_12}"
+                Phone="{StaticResource TxtSizeCap_12}"
+                Desktop="{StaticResource TxtSizeSubTit2_14}"
+                Tablet="{StaticResource TxtSizeSubTit2_14}"
+                TV="{StaticResource TxtSizeSubTit2_14}" />
+        </Setter>
+        <Setter Property="FontFamily" Value="OpenSans_Regular" />
+    </Style>
+    <!--#endregion-->
+
+
+    <!--#region Overline-->
+
+    <!--#endregion-->
+
+</ResourceDictionary>

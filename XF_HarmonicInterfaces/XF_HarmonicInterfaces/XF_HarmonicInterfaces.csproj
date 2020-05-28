@@ -1,0 +1,179 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DebugType>portable</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Resources\FontFamily\BebasNeue-Bold.ttf" />
+    <None Remove="Resources\FontFamily\BebasNeue-Book.ttf" />
+    <None Remove="Resources\FontFamily\BebasNeue-Light.ttf" />
+    <None Remove="Resources\FontFamily\BebasNeue-Regular.ttf" />
+    <None Remove="Resources\FontFamily\BebasNeue-Thin.ttf" />
+    <None Remove="Resources\FontFamily\OpenSans-Bold.ttf" />
+    <None Remove="Resources\FontFamily\OpenSans-BoldItalic.ttf" />
+    <None Remove="Resources\FontFamily\OpenSans-ExtraBold.ttf" />
+    <None Remove="Resources\FontFamily\OpenSans-ExtraBoldItalic.ttf" />
+    <None Remove="Resources\FontFamily\OpenSans-Italic.ttf" />
+    <None Remove="Resources\FontFamily\OpenSans-Light.ttf" />
+    <None Remove="Resources\FontFamily\OpenSans-LightItalic.ttf" />
+    <None Remove="Resources\FontFamily\OpenSans-Regular.ttf" />
+    <None Remove="Resources\FontFamily\OpenSans-SemiBold.ttf" />
+    <None Remove="Resources\FontFamily\OpenSans-SemiBoldItalic.ttf" />
+    <None Remove="Resources\FontFamily\Poppins-Black.ttf" />
+    <None Remove="Resources\FontFamily\Poppins-BlackItalic.ttf" />
+    <None Remove="Resources\FontFamily\Poppins-Bold.ttf" />
+    <None Remove="Resources\FontFamily\Poppins-BoldItalic.ttf" />
+    <None Remove="Resources\FontFamily\Poppins-ExtraBold.ttf" />
+    <None Remove="Resources\FontFamily\Poppins-ExtraBoldItalic.ttf" />
+    <None Remove="Resources\FontFamily\Poppins-ExtraLight.ttf" />
+    <None Remove="Resources\FontFamily\Poppins-ExtraLightItalic.ttf" />
+    <None Remove="Resources\FontFamily\Poppins-Italic.ttf" />
+    <None Remove="Resources\FontFamily\Poppins-Light.ttf" />
+    <None Remove="Resources\FontFamily\Poppins-LightItalic.ttf" />
+    <None Remove="Resources\FontFamily\Poppins-Medium.ttf" />
+    <None Remove="Resources\FontFamily\Poppins-MediumItalic.ttf" />
+    <None Remove="Resources\FontFamily\Poppins-Regular.ttf" />
+    <None Remove="Resources\FontFamily\Poppins-SemiBold.ttf" />
+    <None Remove="Resources\FontFamily\Poppins-SemiBoldItalic.ttf" />
+    <None Remove="Resources\FontFamily\Poppins-Thin.ttf" />
+    <None Remove="Resources\FontFamily\Poppins-ThinItalic.ttf" />
+    <None Remove="Resources\FontFamily\SourceSansPro-Black.ttf" />
+    <None Remove="Resources\FontFamily\SourceSansPro-BlackItalic.ttf" />
+    <None Remove="Resources\FontFamily\SourceSansPro-Bold.ttf" />
+    <None Remove="Resources\FontFamily\SourceSansPro-BoldItalic.ttf" />
+    <None Remove="Resources\FontFamily\SourceSansPro-ExtraLight.ttf" />
+    <None Remove="Resources\FontFamily\SourceSansPro-ExtraLightItalic.ttf" />
+    <None Remove="Resources\FontFamily\SourceSansPro-Italic.ttf" />
+    <None Remove="Resources\FontFamily\SourceSansPro-Light.ttf" />
+    <None Remove="Resources\FontFamily\SourceSansPro-LightItalic.ttf" />
+    <None Remove="Resources\FontFamily\SourceSansPro-Regular.ttf" />
+    <None Remove="Resources\FontFamily\SourceSansPro-SemiBold.ttf" />
+    <None Remove="Resources\FontFamily\SourceSansPro-SemiBoldItalic.ttf" />
+    <None Remove="Resources\FontIcons\materialdesignicons-webfont.ttf" />
+    <None Remove="Resources\FontIcons\monettelliuikitfonticons.ttf" />
+    <None Remove="SVGImages\svg_bg_exercise.svg" />
+    <None Remove="SVGImages\svg_bg_exerciseDetail.svg" />
+    <None Remove="SVGImages\svg_exercises.svg" />
+    <None Remove="SVGImages\svg_hamburger.svg" />
+    <None Remove="SVGImages\svg_main.svg" />
+    <None Remove="SVGImages\svg_meditating.svg" />
+    <None Remove="SVGImages\svg_meditation.svg" />
+    <None Remove="SVGImages\svg_menu.svg" />
+    <None Remove="SVGImages\svg_play1.svg" />
+    <None Remove="SVGImages\svg_play2.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\FontFamily\BebasNeue-Bold.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\BebasNeue-Book.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\BebasNeue-Light.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\BebasNeue-Regular.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\BebasNeue-Thin.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\OpenSans-Bold.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\OpenSans-BoldItalic.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\OpenSans-ExtraBold.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\OpenSans-ExtraBoldItalic.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\OpenSans-Italic.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\OpenSans-Light.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\OpenSans-LightItalic.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\OpenSans-Regular.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\OpenSans-SemiBold.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\OpenSans-SemiBoldItalic.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\Poppins-Black.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\Poppins-BlackItalic.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\Poppins-Bold.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\Poppins-BoldItalic.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\Poppins-ExtraBold.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\Poppins-ExtraBoldItalic.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\Poppins-ExtraLight.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\Poppins-ExtraLightItalic.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\Poppins-Italic.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\Poppins-Light.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\Poppins-LightItalic.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\Poppins-Medium.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\Poppins-MediumItalic.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\Poppins-Regular.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\Poppins-SemiBold.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\Poppins-SemiBoldItalic.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\Poppins-Thin.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\Poppins-ThinItalic.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\SourceSansPro-Black.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\SourceSansPro-BlackItalic.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\SourceSansPro-Bold.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\SourceSansPro-BoldItalic.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\SourceSansPro-ExtraLight.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\SourceSansPro-ExtraLightItalic.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\SourceSansPro-Italic.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\SourceSansPro-Light.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\SourceSansPro-LightItalic.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\SourceSansPro-Regular.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\SourceSansPro-SemiBold.ttf" />
+    <EmbeddedResource Include="Resources\FontFamily\SourceSansPro-SemiBoldItalic.ttf" />
+    <EmbeddedResource Include="Resources\FontIcons\materialdesignicons-webfont.ttf" />
+    <EmbeddedResource Include="Resources\FontIcons\monettelliuikitfonticons.ttf" />
+    <EmbeddedResource Include="SVGImages\svg_bg_exercise.svg" />
+    <EmbeddedResource Include="SVGImages\svg_bg_exerciseDetail.svg" />
+    <EmbeddedResource Include="SVGImages\svg_exercises.svg" />
+    <EmbeddedResource Include="SVGImages\svg_hamburger.svg" />
+    <EmbeddedResource Include="SVGImages\svg_main.svg" />
+    <EmbeddedResource Include="SVGImages\svg_meditating.svg" />
+    <EmbeddedResource Include="SVGImages\svg_meditation.svg" />
+    <EmbeddedResource Include="SVGImages\svg_menu.svg" />
+    <EmbeddedResource Include="SVGImages\svg_play1.svg" />
+    <EmbeddedResource Include="SVGImages\svg_play2.svg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie" Version="3.0.3" />
+    <PackageReference Include="Refractored.MvvmHelpers" Version="1.6.2" />
+    <PackageReference Include="SkiaSharp.Views.Forms" Version="1.68.3" />
+    <PackageReference Include="Xamarin.FFImageLoading.Forms" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.FFImageLoading.Svg.Forms" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.FFImageLoading.Transformations" Version="2.4.11.982" />
+    <PackageReference Include="Xamarin.Forms" Version="4.6.0.800" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
+    <PackageReference Include="Xamarin.Forms.PancakeView" Version="1.4.2" />
+    <PackageReference Include="Xamarin.Forms.Visual.Material" Version="4.6.0.800" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="AppShell.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Styles\General.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Styles\Icons.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Styles\Responsive.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Styles\Texts.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Themes\DarkTheme.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Themes\LightTheme.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PreviewApp\ConstructionPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\PreviewApp\Styles.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Profile\Styles.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  
+</Project>

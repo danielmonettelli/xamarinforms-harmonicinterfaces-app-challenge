@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="XF_HarmonicInterfaces.Views.ExercisePage"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:ff="clr-namespace:FFImageLoading.Forms;assembly=FFImageLoading.Forms"
+    xmlns:ffSvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
+    xmlns:ffTrans="clr-namespace:FFImageLoading.Transformations;assembly=FFImageLoading.Transformations"
+    xmlns:yummy="clr-namespace:Xamarin.Forms.PancakeView;assembly=Xamarin.Forms.PancakeView"
+    xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
+    Title="All Exercises"
+    ios:Page.UseSafeArea="True"
+    Shell.NavBarIsVisible="False"
+    BackgroundColor="{DynamicResource colTabBarBack}"
+    mc:Ignorable="d">
+
+    <ContentPage.Resources>
+        <ResourceDictionary Source="Styles.xaml" />
+    </ContentPage.Resources>
+
+
+    <ContentPage.Content>
+
+
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height=".051*" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height=".027*" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height=".067*" />
+                <RowDefinition Height=".072*" />
+                <RowDefinition Height=".516*" />
+                <!--<RowDefinition Height="Auto" />-->
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width=".075*" />
+                <ColumnDefinition Width=".032*" />
+                <ColumnDefinition Width=".786*" />
+                <ColumnDefinition Width=".032*" />
+                <ColumnDefinition Width=".075*" />
+            </Grid.ColumnDefinitions>
+
+
+            <ffSvg:SvgCachedImage
+                Grid.Row="0"
+                Grid.RowSpan="7"
+                Grid.ColumnSpan="5"
+                Aspect="AspectFill"
+                BackgroundColor="#F5CEB8"
+                Source="resource://XF_HarmonicInterfaces.SVGImages.svg_bg_exercise.svg" />
+
+            <ffSvg:SvgCachedImage
+                Grid.Row="1"
+                Grid.Column="2"
+                Grid.ColumnSpan="2"
+                Source="resource://XF_HarmonicInterfaces.SVGImages.svg_menu.svg"
+                HeightRequest="52"
+                WidthRequest="52"
+                HorizontalOptions="End" >
+                <ffSvg:SvgCachedImage.GestureRecognizers>
+                    <TapGestureRecognizer Command="{Binding ThemeSelectedCommand}"/>
+                </ffSvg:SvgCachedImage.GestureRecognizers>
+            </ffSvg:SvgCachedImage>
+
+            <Label
+                Grid.Row="2"
+                Grid.Column="2"
+                Text="Good Morning Luana"
+                MaxLines="2"
+                Style="{StaticResource TxtHeadLine4_1}" />
+
+            <yummy:PancakeView
+                Grid.Row="4"
+                Grid.Column="2"
+                Padding="0,0,0,-1"
+                BackgroundColor="{DynamicResource colEntry1}"
+                Opacity=".7"
+                HeightRequest="46"
+                CornerRadius="23"
+                HasShadow="False"
+                HorizontalOptions="FillAndExpand"
+                IsClippedToBounds="True">
+
+                <SearchBar
+                    HorizontalOptions="FillAndExpand"
+                    Placeholder="Search"
+                    Style="{StaticResource TxtCaption_1}" />
+
+            </yummy:PancakeView>
+
+
+            <yummy:PancakeView
+                Grid.Row="7"
+                Grid.ColumnSpan="5"
+                BackgroundGradientStartColor="{DynamicResource colStartBG1}"
+                BackgroundGradientEndColor="{DynamicResource colEndBG1}" />
+
+
+            <CollectionView
+                Grid.Row="6"
+                Grid.RowSpan="2"
+                Grid.Column="1"
+                Grid.ColumnSpan="3"
+                ItemsSource="{Binding Exercises}"
+                SelectionMode="Single"
+                SelectedItem="{Binding SelectedExercise}"
+                SelectionChangedCommand="{Binding ExerciseSelectedCommand}">
+
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout
+                        Orientation="Vertical"
+                        Span="2"
+                        HorizontalItemSpacing="17"
+                        VerticalItemSpacing="24" />
+                </CollectionView.ItemsLayout>
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <yummy:PancakeView
+                            CornerRadius="10"
+                            BackgroundGradientStartColor="{DynamicResource colStartSurf1}"
+                            BackgroundGradientEndColor="{DynamicResource colEndSurf1}"
+                            HeightRequest="190">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height=".08*" />
+                                    <RowDefinition Height=".542*" />
+                                    <RowDefinition Height=".142*" />
+                                    <RowDefinition Height=".18*" />
+                                    <RowDefinition Height=".056*" />
+                                </Grid.RowDefinitions>
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width=".066*" />
+                                    <ColumnDefinition Width=".868*" />
+                                    <ColumnDefinition Width=".066*" />
+                                </Grid.ColumnDefinitions>
+
+                                <ffSvg:SvgCachedImage
+                                    Grid.Row="1"
+                                    Grid.Column="1"
+                                    Source="{Binding Image_Exercise}" />
+
+                                <Label
+                                    Grid.Row="3"
+                                    Grid.Column="1"
+                                    Text="{Binding Name_Exercise}"
+                                    HorizontalTextAlignment="Center"
+                                    VerticalTextAlignment="End"
+                                    MaxLines="2"
+                                    Style="{StaticResource TxtCaption_2}" />
+
+                            </Grid>
+                        </yummy:PancakeView>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

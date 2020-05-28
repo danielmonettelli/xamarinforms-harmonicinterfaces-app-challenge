@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:FontAwesome="clr-namespace:XF_HarmonicInterfaces.CodeFontIcons;assembly=XF_HarmonicInterfaces"
+    mc:Ignorable="d">
+
+    <!--#region CUSTOM FONT ICONS WITH IconMoon and Fontello-->
+    <!--<OnPlatform x:Key="MonettelliFontIcons" x:TypeArguments="x:String">
+        <On Platform="Android"
+            Value="FontIcons/monettelliuikitfonticons.ttf#monettelliuikitfonticons" />
+        <On Platform="iOS"
+            Value="monettelliuikitfonticons" />
+        <On Platform="UWP"
+            Value="/Assets/FontIcons/monettelliuikitfonticons.ttf#monettelliuikitfonticons" />
+    </OnPlatform>-->
+    <!--#endregion-->
+
+
+    <!--#region FontImageSource TABS-->
+    <FontImageSource
+        x:Key="icon_tab_today"
+        FontFamily="MonettelliFontIcons"
+        Glyph="{x:Static FontAwesome:MonettelliFontIcons.icon_tab_today}" />
+
+    <FontImageSource
+        x:Key="icon_tab_gym"
+        FontFamily="MonettelliFontIcons"
+        Glyph="{x:Static FontAwesome:MonettelliFontIcons.icon_tab_gym}" />
+
+    <FontImageSource
+        x:Key="icon_tab_settings"
+        FontFamily="MonettelliFontIcons"
+        Glyph="{x:Static FontAwesome:MonettelliFontIcons.icon_tab_settings}" />
+    <!--#endregion-->
+    
+
+    <!--#region FontImageSource INTERFACES-->
+    <FontImageSource
+        x:Key="icon_search"
+        FontFamily="MonettelliFontIcons"
+        Glyph="{x:Static FontAwesome:MonettelliFontIcons.icon_search}"
+        Size="21"
+        Color="#B8B8BF" />
+
+    <FontImageSource
+        x:Key="icon_lock"
+        FontFamily="MonettelliFontIcons"
+        Glyph="{x:Static FontAwesome:MonettelliFontIcons.icon_lock}"
+        Color="{DynamicResource colSep}" />
+    <!--#endregion-->
+
+</ResourceDictionary>

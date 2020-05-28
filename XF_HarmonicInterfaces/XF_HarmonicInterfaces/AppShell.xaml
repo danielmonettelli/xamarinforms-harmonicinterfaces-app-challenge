@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Shell
+    x:Class="XF_HarmonicInterfaces.AppShell"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:view="clr-namespace:XF_HarmonicInterfaces.Views"
+    Title="MonettelliUIKIT"
+    Visual="Default"
+    mc:Ignorable="d">
+
+
+    <!--#region SHELL RESOURCES-->
+    <Shell.Resources>
+        <Style
+            x:Key="BaseStyle"
+            TargetType="Element">
+            <Setter Property="Shell.BackgroundColor" Value="{DynamicResource colBackgroundColor}" />
+            <!--  In iOS, this property changes the color of the FlyoutIcon and the selected top tabs  -->
+            <Setter Property="Shell.ForegroundColor" Value="{DynamicResource colForegroundColor}" />
+            <Setter Property="Shell.TitleColor" Value="{DynamicResource colTitleColor}" />
+            <Setter Property="Shell.DisabledColor" Value="White" />
+            <!--  In iOS this property changes the color tabs upper not selected  -->
+            <Setter Property="Shell.UnselectedColor" Value="{DynamicResource colTabBarUns}" />
+            <Setter Property="Shell.TabBarBackgroundColor" Value="{DynamicResource colTabBarBack}" />
+            <!--  In UWP this property changes the color tabs  -->
+            <Setter Property="Shell.TabBarForegroundColor" Value="{DynamicResource colTabBarTitle}" />
+            <Setter Property="Shell.TabBarUnselectedColor" Value="{DynamicResource colTabBarUns}" />
+            <Setter Property="Shell.TabBarTitleColor" Value="{DynamicResource colTabBarTitle}" />
+        </Style>
+        <!--#endregion-->
+
+
+        <!--#region ADD TabBar FlyoutBehavior is INVISIBLE-->
+        <Style
+            BasedOn="{StaticResource BaseStyle}"
+            TargetType="TabBar"
+            ApplyToDerivedTypes="True" />
+        <!--#endregion-->
+
+        <!--#region ADD ShellItem FlyoutBehavior is VISIBLE-->
+        <Style
+            BasedOn="{StaticResource BaseStyle}"
+            TargetType="ShellItem"
+            ApplyToDerivedTypes="True" />
+        <!--#endregion-->
+
+        <!--#region ADD FlyoutItem FlyoutBehavior is VISIBLE-->
+        <Style
+            BasedOn="{StaticResource BaseStyle}"
+            TargetType="FlyoutItem"
+            ApplyToDerivedTypes="True" />
+        <!--#endregion-->
+    </Shell.Resources>
+    <!--#endregion-->
+
+
+    <!--#region TABS SECTOR-->
+    <!--#region Main dashboard-->
+    <TabBar>
+        <!--#region Today Tab-->
+        <Tab
+            Title="Today"
+            Icon="{StaticResource icon_tab_today}">
+            <ShellContent ContentTemplate="{DataTemplate view:ConstructionPage}" />
+        </Tab>
+        <!--#endregion-->
+
+        <!--#region Top Bar Tab-->
+        <Tab
+            Title="All Exercises"
+            Icon="{StaticResource icon_tab_gym}">
+            <ShellContent ContentTemplate="{DataTemplate view:ExercisePage}" />
+        </Tab>
+        <!--#endregion-->
+
+        <!--#region Settings Tab-->
+        <Tab
+            Title="Settings"
+            Icon="{StaticResource icon_tab_settings}">
+            <ShellContent ContentTemplate="{DataTemplate view:ConstructionPage}" />
+        </Tab>
+        <!--#endregion-->
+    </TabBar>
+    <!--#endregion-->
+    <!--#endregion-->
+
+</Shell>

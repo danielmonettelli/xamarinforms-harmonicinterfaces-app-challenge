@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ResourceDictionary
+    x:Class="XF_HarmonicInterfaces.Themes.DarkTheme"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Source="/Styles/General.xaml"
+    mc:Ignorable="d">
+
+    <!--#region Color Range-->
+    <Color x:Key="colPrim">#FFB280</Color>
+    <Color x:Key="colSec">#222B45</Color>
+    <Color x:Key="colTer">#38415C</Color>
+    <Color x:Key="colQua">#132045</Color>
+    <Color x:Key="colQui">#C6C6C7</Color>
+    <Color x:Key="colSex">#D5DBEB</Color>
+    <Color x:Key="colSep">#C6C6C7</Color>
+    <Color x:Key="colOct">#FFFFFF</Color>
+    <Color x:Key="colNon">#F0F4F8</Color>
+    <Color x:Key="colTen">#FFFFFF</Color>
+    <!--#endregion-->
+
+    <!--#region Backgroundcolors-->
+    <Color x:Key="colStartBG1">#5D5B5A</Color>
+    <Color x:Key="colEndBG1">#5D5B5A</Color>
+    <Color x:Key="colStartBG2">#404E5A</Color>
+    <Color x:Key="colEndBG2">#404E5A</Color>
+    <!--#endregion-->
+
+    <!--#region Entry Colors-->
+    <Color x:Key="colEntry1">#7A716D</Color>
+    <Color x:Key="colEntry2">#4E5D6A</Color>
+    <Color x:Key="colAccCheck">#FFE7F9F5</Color>
+    <Color x:Key="colAccError">#FFF9E7EB</Color>
+    <Color x:Key="colAccUns">#FFF2F3F5</Color>
+    <Color x:Key="colUnsPrim">#FFC7CAD1</Color>
+    <Color x:Key="colAltQua">#FFE3E7EF</Color>
+    <!--#endregion-->
+
+    <!--#region Border Colors-->
+    <Color x:Key="colBorCheck">#FF10CA87</Color>
+    <Color x:Key="colBorError">#FFCA1030</Color>
+    <!--#endregion-->
+
+    <!--#region Remark Colors-->
+    <Color x:Key="colRemPrim">#FFF93963</Color>
+    <Color x:Key="colRemSec">#FFD4145C</Color>
+    <!--#endregion-->
+
+    <!--#region Surface Colors-->
+    <Color x:Key="colStartSurf1">#7A716D</Color>
+    <Color x:Key="colEndSurf1">#7A716D</Color>
+    <Color x:Key="colStartSurf2">#4E5D6A</Color>
+    <Color x:Key="colEndSurf2">#4E5D6A</Color>
+    <!--#endregion-->
+
+    <!--#region Shell Colors-->
+    <Color x:Key="colTabBarUns">#D5DBEB</Color>
+    <Color x:Key="colTabBarBack">#343434</Color>
+    <Color x:Key="colTabBarTitle">#FFB280</Color>
+    <Color x:Key="colBackgroundColor">#343434</Color>
+    <Color x:Key="colForegroundColor">#FFB280</Color>
+    <Color x:Key="colTitleColor">#FFB280</Color>
+    <!--#endregion-->
+
+</ResourceDictionary>
