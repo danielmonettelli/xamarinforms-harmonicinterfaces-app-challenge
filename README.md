@@ -7,8 +7,8 @@ The project could not be possible thanks to the incredible design of [Shahidul I
 [![Design](https://cdn.dribbble.com/users/1162450/screenshots/6748058/mediation_dribble_02_2x.png)](https://dribbble.com/shots/6748058-Daily-Exercises-Course-Freebie)
 
 # Blog Post
-- English -
-- Spanish - 
+- [English](https://danielmonettelli.github.io/harmonic-interfaces-with-monettelliuikit-in-xamarin-forms-vol-1/index.html).
+- [Spanish](https://xamarinlatino.com/interfaces-arm%C3%B3nicas-con-monettelliuikit-en-xamarin-forms-vol-1-fb2dc05ef372).
  
  # Sponsors
  ## Snppts - Beautiful Xamarin.Forms Designs
