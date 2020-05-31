@@ -15,7 +15,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
@@ -117,7 +116,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\XF_HarmonicInterfaces\XF_HarmonicInterfaces.csproj">
-      <Project>{1CA81EDF-43DD-4202-988C-61EF98F3CB42}</Project>
+      <Project>{665EB841-D73F-4595-AB3D-E398C9ADCC3E}</Project>
       <Name>XF_HarmonicInterfaces</Name>
     </ProjectReference>
   </ItemGroup>
