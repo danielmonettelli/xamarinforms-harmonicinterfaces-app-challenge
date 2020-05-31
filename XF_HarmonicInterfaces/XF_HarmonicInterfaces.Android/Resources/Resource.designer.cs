@@ -16191,31 +16191,10 @@ namespace XF_HarmonicInterfaces.Android
 			public const int notify_panel_notification_icon_bg = 2131165301;
 			
 			// aapt resource value: 0x7F070076
-			public const int svg_burn = 2131165302;
+			public const int tooltip_frame_dark = 2131165302;
 			
 			// aapt resource value: 0x7F070077
-			public const int svg_preview_darktheme = 2131165303;
-			
-			// aapt resource value: 0x7F070078
-			public const int svg_preview_instagramdarktheme = 2131165304;
-			
-			// aapt resource value: 0x7F070079
-			public const int svg_preview_instagrameleganttheme = 2131165305;
-			
-			// aapt resource value: 0x7F07007A
-			public const int svg_preview_lighttheme = 2131165306;
-			
-			// aapt resource value: 0x7F07007B
-			public const int svg_running = 2131165307;
-			
-			// aapt resource value: 0x7F07007C
-			public const int svg_star_badge = 2131165308;
-			
-			// aapt resource value: 0x7F07007D
-			public const int tooltip_frame_dark = 2131165309;
-			
-			// aapt resource value: 0x7F07007E
-			public const int tooltip_frame_light = 2131165310;
+			public const int tooltip_frame_light = 2131165303;
 			
 			static Drawable()
 			{
