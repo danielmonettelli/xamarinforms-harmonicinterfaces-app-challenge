@@ -1,5 +1,5 @@
 # Harmonic Interfaces in Xamarin.Forms
-[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](#Open-Source-Love) [![Build Status](https://danielmonettelli.visualstudio.com/XF_HarmonicInterfaces/_apis/build/status/danielmonettelli.XF_HarmonicInterfaces?branchName=master)](https://danielmonettelli.visualstudio.com/XF_HarmonicInterfaces/_build/latest?definitionId=2&branchName=master)
+[![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](#Open-Source-Love) [![Build Status](https://danielmonettelli.visualstudio.com/XF_HarmonicInterfaces/_apis/build/status/danielmonettelli.XF_HarmonicInterfaces?branchName=master)](https://danielmonettelli.visualstudio.com/XF_HarmonicInterfaces/_build)
 [![licence](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/danielmonettelli/XF_HarmonicInterfaces/blob/master/LICENSE.md)
 
 # Design
